@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Blas Pinto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        
+        <div class="form-content">
+            <form action="/submit" method="post">
+                <h2>Información Personal</h2>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>Estado Civil</label>
+                    <label><input type="radio" name="estado_civil" value="soltero" required> Soltero</label>
+                    <label><input type="radio" name="estado_civil" value="casado"> Casado</label>
+                </div>
+                <div class="form-group">
+                    <label>Género</label>
+                    <label><input type="radio" name="genero" value="hombre" required> Hombre</label>
+                    <label><input type="radio" name="genero" value="mujer"> Mujer</label>
+                </div>
+                <div class="form-group">
+                    <label for="sobre_mi">Sobre mí</label>
+                    <textarea id="sobre_mi" name="sobre_mi" maxlength="100" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferencia">Preferencias</label>
+                    <select id="preferencia" name="preferencia">
+                        <option value="opcion1">Pan</option>
+                        <option value="opcion2">Palta</option>
+                        <option value="opcion3">Completo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="acepta_condiciones" required> Acepto los términos y condiciones
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        
+        <div class="image-container">
+            <img src="img/optimus.webp" alt="Optimus Prime">
+        </div>
+    </div>
+</body>
+</html>
